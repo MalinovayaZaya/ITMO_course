@@ -20,8 +20,8 @@ else
 }
 ofstream fout("output.txt");
 {
-    if (- pow(2, 32) < X + Y && X + Y < pow(2, 32)) fout << X + Y; //"OVERFLOW" - в кодировке Win-1251 (сайт с кодировками - "https://wiki.iarduino.ru/page/encoding-arduino/")
-    else fout << "\117\126\105\122\106\114\117\127";
+    if (- pow(2, 32) < X + Y && X + Y < pow(2, 32)) fout << X + Y;
+    else fout << "\117\126\105\122\106\114\117\127";  //"OVERFLOW" - в кодировке Win-1251 (сайт с кодировками - "https://wiki.iarduino.ru/page/encoding-arduino/")
 }
 fout.close();
 	return 0;
